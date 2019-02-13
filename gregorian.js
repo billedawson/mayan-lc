@@ -27,4 +27,4 @@ const gregCalc = (JDN) => {
 
 module.exports.gregCalc = gregCalc;
 
-//  Fromulae from https://quasar.as.utexas.edu/BillInfo/JulianDatesG.html
+//  Formulae from https://quasar.as.utexas.edu/BillInfo/JulianDatesG.html
