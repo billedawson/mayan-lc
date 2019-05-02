@@ -17,8 +17,8 @@ const gregCalc = (JDN) => {
   let E = parseInt((B - D)/30.6001);
   let F = parseInt(30.6001 * E);
   let gregDay = parseInt(B - D - F + (Q-Z));
-  let gregMonth = (E < 12) ? (E - 1) : (E - 13);
-  let gregYear = (gregMonth === 1) ? (C - 4715) : (gregMonth == 2) ? (C - 4715) : (C - 4716);
+  let gregMonth = (E > 13) ? (E - 13) : (E - 1);
+  let gregYear = (gregMonth < 3) ? (C - 4715) : (C - 4716);
 
   // console.log(`Today's Gregorian date is ${gregMonth}/${gregDay}/${gregYear}.`);
 
